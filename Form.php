@@ -113,14 +113,17 @@ global $fname,$lname,$email,$gender,$education,$skill,$servername,$username,$pas
           die("error while connection".$conn->connect_error);
     }
     else
-      { //echo "connected successfully !!";  }
+      { //echo "connected successfully !!"; 
+    }
 
     //create database
     $crdb="CREATE DATABASE IF NOT EXISTS ".$dbName;
     if($conn->query($crdb))
-     {   //echo "<br/>database created";  }
+     {   //echo "<br/>database created"; 
+    }
     else
-      {  //echo "<br/>error during database creation";   }
+      {  //echo "<br/>error during database creation";  
+    }
 
     //create table
     $crtble="CREATE TABLE IF NOT EXISTS ".$dbName.".".$tbName."(
@@ -133,9 +136,11 @@ global $fname,$lname,$email,$gender,$education,$skill,$servername,$username,$pas
      SKILL VARCHAR(100)
      )";
      if($conn->query($crtble))
-      {  echo "<br/> table created";  }
+      { // echo "<br/> table created";
+      }
     else
-       { echo "<br/>error during table crearion";  }
+       { //echo "<br/>error during table crearion"; 
+       }
 
     //insert data
     $instr=
@@ -163,7 +168,8 @@ function validateEmail($email)
           die("error while connection".$conn->connect_error);
     }
     else
-      { //echo "connected successfully !!";   }
+      { //echo "connected successfully !!";   
+    }
     
     //result 
     $sq="SELECT EMAIL FROM ".$dbName.".".$tbName;
