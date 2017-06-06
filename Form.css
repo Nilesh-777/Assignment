@@ -1,0 +1,62 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+body
+{
+	background-color: #FFF6CC;
+}
+div{
+	display:block;
+	margin-bottom: 10px;
+}
+
+#form{
+	background-color: white;
+	margin:30px auto;
+	padding:20px;
+	box-shadow: 5px 5px 25px grey;
+	width:500px;
+}
+
+.msg{
+	color:red;
+}
+#top{
+	text-shadow: 0px 0px 5px red;
+}
+
+#button{
+	color:white;
+	cursor:pointer;
+	padding: 14px 28px;
+	border:none;
+	background-color: #006400;
+}
+#button:hover{
+	background-color: #556b2f;
+	box-shadow: 2px 2px 10px grey;
+}
+
+#button1{
+	color:white;
+	cursor:pointer;
+	padding: 14px 28px;
+	border:none;
+	float: right;
+	text-decoration: none;
+	background-color: #006400;
+}
+
+
+#button1:hover{
+	background-color: #556b2f;
+	box-shadow: 2px 2px 10px grey;
+}
+
+.but{
+	display:inline-block;
+}
+
+
+
